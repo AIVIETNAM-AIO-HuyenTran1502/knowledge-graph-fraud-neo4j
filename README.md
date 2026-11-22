@@ -158,6 +158,13 @@ knowledge-graph-fraud-neo4j/
 
 ## Dữ liệu & giấy phép
 
-Dữ liệu dẫn xuất từ **PaySim** (Lopez-Rojas, Elmir & Axelsson, 2016) — bộ mô phỏng, không phải giao dịch thật. Nguồn, schema và giấy phép: [`data/README.md`](data/README.md).
+Dữ liệu dẫn xuất từ **PaySim** (Lopez-Rojas, Elmir & Axelsson, 2016) — bộ mô phỏng, không phải giao dịch thật của khách hàng nào.
 
-Code, notebook và tài liệu trong repo này theo giấy phép [MIT](LICENSE).
+Repo dùng hai giấy phép:
+
+| Phần | Giấy phép |
+|---|---|
+| `data/` | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) — theo giấy phép của PaySim trên Kaggle |
+| Code, notebook, tài liệu | [MIT](LICENSE) |
+
+Nguồn, schema, quy tắc sinh dữ liệu và trích dẫn yêu cầu: [`data/README.md`](data/README.md).

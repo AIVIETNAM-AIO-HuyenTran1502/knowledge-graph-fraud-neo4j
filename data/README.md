@@ -6,7 +6,7 @@ Hai file trong thư mục này là **đầu vào trực tiếp** của pipeline 
 
 ## `paysim_sample.csv` — 258.213 giao dịch (20 MB)
 
-Mẫu lấy từ bộ PaySim gốc (6,3 triệu dòng): **giữ toàn bộ** giao dịch `isFraud = 1`, cộng thêm 250.000 giao dịch không gian lận lấy ngẫu nhiên.
+Mẫu lấy từ bộ PaySim trên Kaggle (6,3 triệu dòng): **giữ toàn bộ** giao dịch `isFraud = 1`, cộng thêm 250.000 giao dịch không gian lận lấy ngẫu nhiên. Các dòng giữ nguyên, không chỉnh sửa nội dung.
 
 | Chỉ số | Giá trị |
 |---|---:|
@@ -68,13 +68,27 @@ Lưu ý con số 16.385 so với 16.382 Client gian lận: **3 trường hợp c
 
 ## Nguồn và giấy phép
 
-Bộ dữ liệu gốc: **PaySim** — Lopez-Rojas, E. A., Elmir, A., & Axelsson, S. (2016). *PaySim: A financial mobile money simulator for fraud detection*. Proceedings of the 28th European Modeling and Simulation Symposium (EMSS), Larnaca, Cyprus.
-
+Bộ dữ liệu gốc: **PaySim** — *Synthetic Financial Datasets For Fraud Detection*, tác giả Edgar Lopez-Rojas.
 Tải tại Kaggle: <https://www.kaggle.com/datasets/ealaxi/paysim1>
 
-PaySim là dữ liệu **mô phỏng**, không phải giao dịch thật của khách hàng nào.
+PaySim là dữ liệu **mô phỏng**, không phải giao dịch thật của khách hàng nào. Bản trên Kaggle đã được thu nhỏ còn 1/4 so với mô phỏng gốc.
 
-> **Cần kiểm tra trước khi công khai repo:** mở trang Kaggle ở trên, xác nhận giấy phép hiện hành của bộ dữ liệu (thường ghi ở khung bên phải), rồi điền chính xác vào đây kèm nghĩa vụ ghi nguồn tương ứng. Phần `data/` theo giấy phép của nguồn; phần code theo [MIT](../LICENSE).
+### Giấy phép
+
+Bộ dữ liệu phát hành theo **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)** (xác nhận qua Kaggle API, `licenseName: "CC BY-SA 4.0"`).
+
+Vì vậy, trong repo này:
+
+- **`data/` theo giấy phép CC BY-SA 4.0**, không phải MIT. Ai dùng lại dữ liệu ở đây phải ghi nguồn và giữ nguyên giấy phép này cho phần dẫn xuất.
+- **Code, notebook và tài liệu theo [MIT](../LICENSE)**, nằm riêng ngoài thư mục `data/` nên không bị ràng buộc share-alike.
+- `paysim_sample.csv` là tập con lấy mẫu, các dòng giữ nguyên không chỉnh sửa.
+- `identities_reduced.csv` là dữ liệu do đề tài tự sinh bằng Faker, chỉ dùng chung cột `account_id` với PaySim; vẫn để theo CC BY-SA 4.0 cho nhất quán cả thư mục.
+
+### Trích dẫn
+
+Tác giả yêu cầu trích dẫn như sau:
+
+> E. A. Lopez-Rojas, A. Elmir, and S. Axelsson. "PaySim: A financial mobile money simulator for fraud detection". In: *The 28th European Modeling and Simulation Symposium — EMSS*, Larnaca, Cyprus. 2016.
 
 ## Tái tạo lại từ đầu
 
