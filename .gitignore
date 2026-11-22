@@ -1,0 +1,23 @@
+# Du lieu goc PaySim day du (6,3 trieu dong) - tai tu Kaggle, khong dua len repo
+paysim.csv
+data/paysim.csv
+data/raw/
+
+# File identity day du (392.614 dong) - notebook sinh lai duoc
+identities.csv
+data/identities.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

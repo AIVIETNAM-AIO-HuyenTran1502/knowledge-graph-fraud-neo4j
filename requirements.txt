@@ -1,0 +1,4 @@
+pandas>=2.0
+faker>=19.0
+neo4j>=5.14
+jupyter>=1.0
